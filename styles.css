@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.wrapper {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+    background: #C0DBD9;
+    box-sizing: border-box;
+}
+
+.header {
+    padding: 30px 30px;
+    background: #7FAFF7;
+    margin-bottom: 15px;
+}
+
+.pop-up-button {
+    padding: 8px 15px;
+    background: #A5C7F9;
+    border-radius: 5px;
+    border: none;
+    color: #FFF;
+    text-decoration: none;
+}
+
+.pop-up {
+    position: relative;
+    width: 400px;
+    height: 400px;
+    background: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 400;
+    font-size: 53px;
+    line-height: 62px;
+}
+
+.overlay {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 200ms;
+    visibility: hidden;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .7);
+}
+
+.overlay:target {
+    opacity: 1;
+    visibility: visible;
+}
+
+.close {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 43px;
+    height: 39px;
+    background: #7FAFF6;
+    border-radius: 5px;
+    color: #FFF;
+    cursor: pointer;
+    right: 15px;
+    top: 15px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    text-decoration: none;
+}
+
+.pop-up-button:hover {
+    cursor: pointer;
+}
+
+.block1 {
+    display: grid;
+    grid-template-areas: "a b c" "d d e";
+    grid-template-rows: 198px 198px;
+    grid-template-columns: 39fr 59fr 16fr;
+    gap: 15px;
+    background: #B3F95A;
+}
+
+.common-styles {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 400;
+    font-size: 53px;
+    line-height: 62px;
+    color: #FFFFFF;
+    background: #8AD191;
+}
+
+.div1 {
+    grid-area: a;
+}
+
+.div1:after {
+    content: "1";
+    display: block;
+}
+
+.div2 {
+    grid-area: b;
+}
+
+.div2:after {
+    content: "2";
+    display: block;
+}
+
+.div3 {
+    grid-area: c;
+}
+
+.div3:after {
+    content: "3";
+    display: block;
+}
+
+.div4 {
+    grid-area: d;
+}
+
+.div4:after {
+    content: "4";
+    display: block;
+}
+
+.div5 {
+    grid-area: e;
+}
+
+.div5:after {
+    content: "5";
+    display: block;
+}
+
+.block2 {
+    display: flex;
+    margin: 15px 0 100px 0;
+    padding: 30px;
+    background: #88B5BF;
+}
+
+.block2-div {
+    width: 25%;
+    background: #0d89b0;
+    margin-right: 30px;
+}
+
+.block2-div::after {
+    content: "";
+    display: block;
+    padding-bottom: 78%;
+}
+
+.block2-div:last-child {
+    margin-right: 0;
+}
+
+.footer {
+    background: #7FAFF7;
+    height: 100px;
+}
